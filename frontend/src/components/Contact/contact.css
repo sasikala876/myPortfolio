@@ -1,0 +1,93 @@
+.textarea {
+    padding-left: 3rem;
+    border: 1px solid black;
+}
+
+.contact__text {
+    text-align: var(--textAlign);
+}
+
+.send_icon {
+    font-size: 20px;
+}
+
+.msg_border {
+    resize: none;
+}
+
+#form {
+    background: bisque;
+    padding: 50px 60px;
+}
+
+#Contact {
+    padding: 60px 0;
+}
+
+.column {
+    padding: 0;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.error {
+    height: 15px;
+    width: 180px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.title2 {
+    text-align: var(--textAlign);
+    margin-bottom: 15px;
+}
+
+.title1 {
+    text-align: var(--textAlign);
+    font-weight: 700;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: var(--textAlign);
+    margin-bottom: 1rem;
+}
+
+.icon-c {
+    position: absolute;
+    font-size: 19px;
+    top: calc(30%);
+    left: 1rem;
+}
+
+.icon-msg {
+    position: absolute;
+    top: calc(10%);
+}
+
+#sub_btn {
+    margin-top: 2rem;
+}
+
+.item {
+    position: relative;
+}
+
+.btn__submit {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width:767px) {
+    #form {
+        padding: 50px 25px;
+    }
+}

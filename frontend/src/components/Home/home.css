@@ -1,0 +1,53 @@
+#file {
+    text-decoration: none;
+    color: black;
+}
+
+#img {
+    height: 300px;
+    width: 200px;
+}
+
+#Home {
+    padding: 10rem 0;
+}
+
+.typeEffect {
+    font-size: 30px;
+    padding-top: 10px;
+    color: red;
+}
+
+.intro {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 60px;
+}
+
+.home-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background: blue;
+    border: 1px solid blue;
+}
+
+.home-arrow {
+    margin-left: 0.2rem;
+}
+
+.aboutMe-text {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:767px) {
+    .media_icons {
+        display: none;
+    }
+
+    #Home {
+        padding: 1rem 0;
+    }
+}

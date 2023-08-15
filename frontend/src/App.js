@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Projects from './components/Projects/Projects';
+import Main from "./components/Main";
+import { useState, useEffect } from 'react';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
+
+  const getTheme = () => {
+    return JSON.parse(localStorage.getItem("theme")) || false
+    // return localStorage.getItem("theme") || false
+  }
+  const [theme, setTheme] = useState(getTheme());
+  const themeGetter = (val) => {
+    setTheme(val);
+  }
+
+  useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(theme))
+  }, [theme])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={theme ? "theme-dark" : ""}>
+      <Header themeGetter={themeGetter} theme={theme} setTheme={setTheme} />
+      <Header />
+      <Routes>
+        <Route path='/' element={<Main />}></Route>
+        <Route path="/projects" element={<Projects />} ></Route>
+      </Routes>
+
     </div>
   );
 }

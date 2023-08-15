@@ -1,0 +1,123 @@
+#projects {
+    padding: 30px 0;
+}
+
+.projects__text {
+    text-align: var(--textAlign);
+}
+
+.bottom__sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__sec p {
+    margin: 0;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    min-height: 260px;
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+.main-div {
+    position: relative;
+    width: 300px;
+}
+
+.imgHover {
+    position: absolute;
+    bottom: 147px;
+}
+
+.logo {
+    width: 36px;
+    padding-right: 10px;
+}
+
+#techUsed__text {
+    margin: 7px 0;
+}
+
+.search-icon {
+    position: absolute;
+    right: -11px;
+    top: 7px;
+}
+
+.search-box {
+    position: relative;
+    width: 170px;
+    margin: 27px auto;
+}
+
+.text-box {
+    padding-left: 13px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.tabs>button {
+    margin-right: 5rem;
+    padding: 0.3rem 1rem;
+}
+
+.default {
+    display: none;
+}
+
+.btn-active {
+    background-color: var(--color-primary);
+    padding: 5px 3px;
+}
+
+.button__hover {
+    padding: 6px 9px;
+    background: green;
+    margin: 0 10px;
+}
+
+.projects__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    position: relative;
+}
+
+@media screen and (max-width:600px) {
+    .projects__section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btns {
+    margin: 7px 0;
+    text-align: center;
+}
+
+.project_icon {
+    margin-right: 4px;
+}
+
+.back_to_home {
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    background: var(--color-primary);
+    place-content: center;
+    position: absolute;
+    left: 50%;
+}

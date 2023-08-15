@@ -1,0 +1,12 @@
+.cross {
+    cursor: pointer;
+}
+
+.modal {
+    margin: 0 auto;
+    --bs-modal-width: 800px;
+}
+
+.react-slideshow-container {
+    padding: 20px 20px 20px 45px;
+}

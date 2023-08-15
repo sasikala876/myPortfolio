@@ -1,0 +1,64 @@
+.modal-body {
+    background: #E5E4E2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    padding: 3rem 2rem;
+    border-radius: 18px;
+}
+
+.title,
+.sub-title {
+    font-weight: bold;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.modal p span {
+    display: block;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg {
+    justify-content: center;
+}
+
+.pm-color {
+    height: 24px;
+    width: 27px;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.bg-color {
+    height: 24px;
+    width: 70px;
+    border-radius: 3px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.sub-title,
+.title {
+    text-align: center;
+}
+
+.title-para {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.box-color {
+    margin: 10px 0;
+}

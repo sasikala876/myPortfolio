@@ -1,0 +1,14 @@
+.list {
+    padding: 10px 0;
+}
+.list_wrapper{
+    padding: 0;
+    transform: translateY(66px);
+}
+.icon {
+    color: black;
+    font-size: 25px;
+}
+.icon:hover {
+    color:var(--color-primary);
+}

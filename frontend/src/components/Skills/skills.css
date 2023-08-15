@@ -1,0 +1,42 @@
+.skills__text {
+    text-align: var(--textAlign);
+}
+.skills__container {
+    display: grid;
+    grid-template-columns: 49% 39%;
+    gap: 12%;
+}
+.skills__cards {
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    gap: 1.5rem;
+    height: 390px;
+}
+.skills__image {
+    height: 55px;
+    width: 64px;
+    margin:1rem 0;
+}
+.skills__right__image {
+    height: 400px;
+    width: 400px;
+}
+.skills__name {
+    font-size: 15px;
+  margin: 0;
+  transform: translateX(7px);
+}
+.skills__left{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.dropdown select {
+    padding: 6px;
+    border: 1px solid black;
+}
+@media screen and (max-width:1024px) {
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+}
+/*53 35*/

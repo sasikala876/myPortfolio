@@ -1,0 +1,98 @@
+.footer {
+    padding: 2rem 0;
+    background: var(--color-primary);
+}
+
+.text-span {
+    display: block;
+}
+
+.social-lists {
+    padding-left: 0;
+    display: flex;
+}
+
+.social-icons-list {
+    margin-right: 10px;
+}
+
+.media-icon {
+    font-size: 20px;
+    transform: translate(50%, 20%);
+}
+
+.scroll-to-page {
+    text-decoration: none;
+}
+
+.scroll-to-page:hover {
+    color: yellow;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#my-name {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.arrow {
+    margin-right: 5px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    color: yellow;
+}
+
+.rounded-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.rounded-icon:hover {
+    background-color: black;
+    color: orange;
+}
+
+#tq-msg {
+    line-height: 2rem;
+}
+
+.footer-subtitle {
+    margin-bottom: 16px;
+}
+
+.main-lists {
+    padding: 0;
+}
+
+.contact-list {
+    padding: 0.2rem 0;
+}
+
+.contact-list-social {
+    padding: 1rem 0;
+}
+
+.bookmark {
+    margin: 3px 0;
+}
+
+@media screen and (max-width:1024px) {
+    .text-span {
+        display: inline;
+    }
+
+    #tq-msg {
+        line-height: 1.6rem;
+        letter-spacing: normal;
+    }
+}

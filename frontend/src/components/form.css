@@ -1,0 +1,35 @@
+/* .box{
+    height: 100px;
+    width: 100px;
+    background: gray;
+    margin: 10px;
+    text-align: center;
+}
+.clicked{
+    height: 100px;
+    width: 100px;
+    background: green;
+    margin: 10px;
+    text-align: center;
+} */
+
+#forms{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background:black;
+}
+button{
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+#newform{
+    background: white;
+    padding: 20px;
+}
+input{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 3px;
+}
