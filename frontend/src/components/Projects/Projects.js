@@ -7,6 +7,7 @@ import ProjectData from './Data.js';
 import { AiFillEye } from "react-icons/ai";
 import { CgCodeSlash } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const Projects = () => {
     const [showModal, setShowModal] = useState(false);
@@ -111,7 +112,7 @@ const Projects = () => {
                 {
                     showModal && <ModalComp showModal={showModal} setShowModal={setShowModal} projectName={projectName} />
                 }
-                <button className="back_to_home" onClick={() => navigate(-1)}>Back To Home</button>
+                <button className="forward_back" onClick={() => navigate(-1)}><AiOutlineArrowLeft className="bth_icon"/>Back To Home</button>
             </div>
         </section>
     )

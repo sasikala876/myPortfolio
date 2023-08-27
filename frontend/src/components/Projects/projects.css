@@ -113,11 +113,17 @@
     margin-right: 4px;
 }
 
-.back_to_home {
+.forward_back {
     margin: 3rem 0;
     padding: 1rem 2rem;
     background: var(--color-primary);
     place-content: center;
     position: absolute;
     left: 50%;
+}
+.bth_icon {
+    margin-right: 4px;
+}
+.viewAll_icon {
+    margin-left: 4px;
 }
