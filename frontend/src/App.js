@@ -21,10 +21,10 @@ function App() {
 
   return (
     <div className={theme ? "theme-dark" : ""}>
-      <Header themeGetter={themeGetter} theme={theme} setTheme={setTheme} />
+      {/* <Header themeGetter={themeGetter} theme={theme} setTheme={setTheme} /> */}
       <Header />
       <Routes>
-        <Route path='/' element={<Main />}></Route>
+        <Route path='/myPortfolio' element={<Main />}></Route>
         <Route path="/projects" element={<Projects />} ></Route>
       </Routes>
 
