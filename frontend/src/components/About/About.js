@@ -29,10 +29,11 @@ const About = () => {
               ))
             }
           </div>
-          <p>I am a passionate frontend developer with 1.6+ years of
+          <p>I am a passionate frontend developer with 1.8+ years of
             experience in frontend technologies such as HTML,CSS,JS,
-            React,Redux and Typescript.I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.</p>
-          <a href="2139749_sasikala_resume.pdf" download className="btn primary">Get Resume<AiOutlineFilePdf /></a>
+            React and Redux.I am very passionate about improving my coding skills & developing applications & websites. I build webApps and websites using MERN Stack. working for myself to improve my skills. Love to build Full-Stack clones.</p>
+          {/* <a href="2139749_sasikala_resume.pdf" download className="btn primary">Get Resume<AiOutlineFilePdf /></a> */}
+          <a href="Resume_Sasikala.pdf" download className="btn primary">Get Resume<AiOutlineFilePdf /></a>
         </div>
       </div>
     </section>

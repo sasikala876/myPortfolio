@@ -24,9 +24,9 @@
     min-height: 260px;
 }
 
-.img:hover {
+/* .img:hover {
     cursor: pointer;
-}
+} */
 
 .main-div {
     position: relative;
@@ -94,7 +94,7 @@
 .projects__section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
+    gap: 4% 2%;
     position: relative;
 }
 
@@ -105,8 +105,19 @@
 }
 
 .btns {
-    margin: 7px 0;
     text-align: center;
+    background: whitesmoke;
+    /* height: 100px; */
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s ease;
+}
+.projectContainer:hover .btns{
+    height: 100px;
 }
 
 .project_icon {
@@ -127,3 +138,26 @@
 .viewAll_icon {
     margin-left: 4px;
 }
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.projectContainer{
+    position:relative;
+}
+/* .projectContainer{
+    position: relative;
+    height: 263px;
+    overflow: hidden;
+    
+} */
+/* .projectPhoto{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+/* .projectPhoto:hover{
+  height: 100%; 
+} */

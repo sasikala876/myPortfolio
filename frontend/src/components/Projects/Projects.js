@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './projects.css';
 import ModalComp from './Modal.js';
 import { AiOutlineSearch } from "react-icons/ai";
@@ -20,6 +20,10 @@ const Projects = () => {
     const [btn3Color, setBtn3Color] = useState(false);
     const [data, setData] = useState(ProjectData);
     const navigate = useNavigate();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    },[]);
 
     function ChooseImg(val) {
         setProjectName(val);
@@ -93,15 +97,14 @@ const Projects = () => {
                                     <div className="bottom__sec">
                                         <div>
                                             <p id="techUsed__text">Technology used</p>
-                                            <img src={item.tech1} className="logo" alt="tech" />
-                                            <img src={item.tech2} className="logo" alt="tech" />
-                                            <img src={item.tech3} className="logo" alt="tech" />
-                                            <img src={item.tech4} className="logo" alt="tech" />
-                                            <img src={item.tech5} className="logo" alt="tech" />
-                                            <img src={item.tech6} className="logo" alt="tech" />
-                                            <img src={item.tech7} className="logo" alt="tech" />
-                                            <img src={item.tech8} className="logo" alt="tech" />
-
+                                            {item.tech1 && <img src={item.tech1} className="logo" alt="tech" />}
+                                            {item.tech2 && <img src={item.tech2} className="logo" alt="tech" />}
+                                            {item.tech3 && <img src={item.tech3} className="logo" alt="tech" />}
+                                            {item.tech4 && <img src={item.tech4} className="logo" alt="tech" />}
+                                            {item.tech5 && <img src={item.tech5} className="logo" alt="tech" />}
+                                            {item.tech6 && <img src={item.tech6} className="logo" alt="tech" />}
+                                            {item.tech7 && <img src={item.tech7} className="logo" alt="tech" />}
+                                            {item.tech8 && <img src={item.tech8} className="logo" alt="tech" />}
                                         </div>
                                         <p className="plus" onClick={() => { setShowModal(true); ChooseImg(item.id) }}>+</p>
                                     </div>

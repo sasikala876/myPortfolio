@@ -10,7 +10,9 @@
     display: grid;
     grid-template-columns: repeat(3,0.5fr);
     gap: 1.5rem;
-    height: 390px;
+    height: 260px;
+    text-align: center;
+    padding: 20px 0;
 }
 .skills__image {
     height: 55px;
@@ -29,10 +31,12 @@
 .skills__left{
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-right: 30px;
 }
 .dropdown select {
     padding: 6px;
     border: 1px solid black;
+    margin: 0 33px;
 }
 @media screen and (max-width:1024px) {
     .skills__container {

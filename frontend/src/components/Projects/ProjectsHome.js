@@ -13,8 +13,7 @@ const ProjectsHome = () => {
     
     const [showModal, setShowModal] = useState(false);
     const [projectName, setProjectName] = useState("");
-    const [box, setBox] = useState(-1);
-    const [miniBox, setMiniBox] = useState(false);
+    const [open,setOpen] = useState(false);
     const [searchItem, setSearchItem] = useState("");
     const [btn1Color, setBtn1Color] = useState(true);
     const [btn2Color, setBtn2Color] = useState(false);
@@ -28,15 +27,6 @@ const ProjectsHome = () => {
     function ChooseImg(val) {
         setProjectName(val);
     }
-    const MouseEnter = (id) => {
-        setBox(id);
-        setMiniBox(true)
-    }
-    const MouseLeave = (val) => {
-        setBox(val);
-        setMiniBox(false)
-    }
-
 
     return (
         <section id="projects">
@@ -47,23 +37,24 @@ const ProjectsHome = () => {
                     {
                         data.slice(0,3).map((item, id) => (
                                 <div className="main-div" key={item.id}>
-                                    <img src={item.image} alt="image1" className="img" onMouseEnter={() => MouseEnter(id)} onMouseLeave={() => MouseLeave(-1)} />
-                                    <div className="btns">
-                                        <button className="button__hover"><a href={item.liveLink} target="_blank"><AiFillEye className="project_icon" />view</a></button>
-                                        <button className="button__hover"><a href={item.github} target="_blank"><CgCodeSlash className="project_icon" />source</a></button>
+                                    <div className='projectContainer'>
+                                        <img src={item.image} alt="image1" className="img" onMouseOver={()=>setOpen(true)} onMouseOut={()=>setOpen(false)}/>
+                                    <div className={`btns ${open ? `show`: `hide`}`}>
+                                        {/* <button className="button__hover"><a href={item.liveLink} target="_blank"><AiFillEye className="project_icon" />view</a></button>
+                                        <button className="button__hover"><a href={item.github} target="_blank"><CgCodeSlash className="project_icon" />source</a></button> */}
+                                    </div>
                                     </div>
                                     <div className="bottom__sec">
                                         <div>
                                             <p id="techUsed__text">Technology used</p>
-                                            <img src={item.tech1} className="logo" alt="tech" />
-                                            <img src={item.tech2} className="logo" alt="tech" />
-                                            <img src={item.tech3} className="logo" alt="tech" />
-                                            <img src={item.tech4} className="logo" alt="tech" />
-                                            <img src={item.tech5} className="logo" alt="tech" />
-                                            <img src={item.tech6} className="logo" alt="tech" />
-                                            <img src={item.tech7} className="logo" alt="tech" />
-                                            <img src={item.tech8} className="logo" alt="tech" />
-
+                                           {item.tech1 && <img src={item.tech1} className="logo" alt="tech" />}
+                                            {item.tech2 && <img src={item.tech2} className="logo" alt="tech" />}
+                                            {item.tech3 && <img src={item.tech3} className="logo" alt="tech" />}
+                                            {item.tech4 && <img src={item.tech4} className="logo" alt="tech" />}
+                                            {item.tech5 &&<img src={item.tech5} className="logo" alt="tech" />}
+                                            {item.tech6 && <img src={item.tech6} className="logo" alt="tech" />}
+                                            {item.tech7 && <img src={item.tech7} className="logo" alt="tech" />}
+                                            {item.tech8 && <img src={item.tech8} className="logo" alt="tech" />}
                                         </div>
                                         <p className="plus" onClick={() => { setShowModal(true); ChooseImg(item.id) }}>+</p>
                                     </div>

@@ -14,6 +14,8 @@ import github from './images/github.png';
 import typescript from './images/typescript.png';
 import redux from './images/redux.png';
 import jquery from './images/jquery.png';
+import bitBucket from './images/bitBucket.jpg';
+import azureDevops from './images/azureDevops.jpg';
 
 const Data = [
     { id: 1, image: html, name: "HTML5", category: "Frontend", link: "https://www.w3schools.com/html/" },
@@ -30,7 +32,9 @@ const Data = [
     { id: 12, image: github, name: "GitHub", category: "Tools", link: "https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" },
     { id: 13, image: typescript, name: "TypeScript", category: "Frontend", link: "https://www.w3schools.com/typescript/" },
     { id: 14, image: redux, name: "Redux", category: "Frontend", link: "https://redux.js.org/" },
-    { id: 15, image: jquery, name: "jQuery", category: "Frontend", link: "https://jquery.com/" }
+    { id: 15, image: jquery, name: "jQuery", category: "Frontend", link: "https://jquery.com/" },
+    { id: 16, image: bitBucket, name: "Bitbucket", category: "Tools", link: "https://bitbucket.org/product" },
+    { id: 17, image: azureDevops, name: "Azure Devops", category: "Tools", link: "https://www.javatpoint.com/azure-devops" }
 ]
 
 export default Data;

@@ -67,6 +67,51 @@ const Data = [
         tech5: nodejs,
         tech6: expressjs,
         tech7: mongodb
+    },
+    {
+        id: 5,
+        image: form1,
+        name: "registration form",
+        category: "fullstack",
+        liveLink: "https://www.w3schools.com/html/",
+        github: "https://github.com/sasikala876",
+        tech1: html,
+        tech2: css,
+        tech3: js,
+        tech4: reactjs,
+        tech5: nodejs,
+        tech6: expressjs,
+        tech7: mongodb
+    },
+    {
+        id: 6,
+        image: form1,
+        name: "registration form",
+        category: "fullstack",
+        liveLink: "https://www.w3schools.com/html/",
+        github: "https://github.com/sasikala876",
+        tech1: html,
+        tech2: css,
+        tech3: js,
+        tech4: reactjs,
+        tech5: nodejs,
+        tech6: expressjs,
+        tech7: mongodb
+    },
+    {
+        id: 7,
+        image: form1,
+        name: "registration form",
+        category: "fullstack",
+        liveLink: "https://www.w3schools.com/html/",
+        github: "https://github.com/sasikala876",
+        tech1: html,
+        tech2: css,
+        tech3: js,
+        tech4: reactjs,
+        tech5: nodejs,
+        tech6: expressjs,
+        tech7: mongodb
     }
 ]
 
